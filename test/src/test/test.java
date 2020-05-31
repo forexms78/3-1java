@@ -2,21 +2,7 @@ package test;
 
 class Hero{
 	public String name;
-	public int ap;
-	
-	public Hero(String n, int p) {
-		name = n;
-		ap = p;
-	}
-	
-//	public void attack() {
-//		System.out.println("공격");
-//	}
-//	
-//	public void def() {
-//		System.out.println("방어");
-//	}
-	
+
 
 }
 

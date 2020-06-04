@@ -18,11 +18,22 @@ public class TestQueue {
 		q.offer(new Trump("Å¬·Î¹ö","Queen"));
 		
 		Trump t1 = q.peek();
+		Trump t2 = q.peek();
+		Trump t3 = q.peek();
+
+
+
 		System.out.println(t1.type + " " + t1.number);
+		System.out.println(t2.type + " " + t2.number);
+
+		System.out.println(t3.type + " " + t3.number);
+
 		
 		while(!q.isEmpty()) {
 			Trump t = q.poll();
 			System.out.println(t.type + " " + t.number);
 		}
 	}
+
+
 }

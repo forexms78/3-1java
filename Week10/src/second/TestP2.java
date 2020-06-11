@@ -23,6 +23,11 @@ public class TestP2 {
 		List<Fruit> CheapList = fruits.stream()
 				.filter(f -> f.getPrice() < 20000)
 				.collect(Collectors.toList()); // 최종 집계
-		CheapList.stream().forEach(f -> System.out.println(f.getName()));		
+		CheapList.stream().forEach(f -> System.out.println(f.getName()));
+		
+		List<Fruit> I7000List = fruits.stream()
+				.filter(f -> f.getPrice() == 17000)
+				.collect(Collectors.toList());
+		I7000List.stream().forEach(f -> System.out.println(f.getName()));
 	}
 }

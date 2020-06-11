@@ -15,16 +15,28 @@ public class TestP3 {
 				new Fruit("watermelon", 25000)				
 		);
 
-//		ExpensiveFruit expensiveFruit = fruits.stream()
-//		.filter(f -> f.getPrice() >= 20000)
-//		.collect(ExpensiveFruit:: new, ExpensiveFruit:: accumulate, ExpensiveFruit:: combine);		
-//		expensiveFruit.getList().forEach(f -> System.out.println(f.getName()));	
-		
-		ExpensiveFruit expensiveFruit = fruits.parallelStream()
+		ExpensiveFruit expensiveFruit = fruits.stream()
 		.filter(f -> f.getPrice() >= 20000)
-		//.collect(ExpensiveFruit:: new, ExpensiveFruit:: accumulate, ExpensiveFruit:: combine);		
-		.collect(()-> new ExpensiveFruit(), (a, b)-> a.accumulate(b), ExpensiveFruit:: combine);
-		expensiveFruit.getList().forEach(f -> System.out.println(f.getName()));		
+		.collect(ExpensiveFruit:: new, ExpensiveFruit:: accumulate, ExpensiveFruit:: combine);		
+		expensiveFruit.getList().forEach(f -> System.out.println(f.getName()));	
+		
+		System.out.println("==============================");
+		
+		ExpensiveFruit expensiveFruit1 = fruits.parallelStream()
+				.filter(f -> f.getPrice() >= 20000)
+				.collect(ExpensiveFruit:: new, ExpensiveFruit:: accumulate, ExpensiveFruit:: combine);		
+				expensiveFruit1.getList().forEach(f -> System.out.println(f.getName()));	
+		
+//		ExpensiveFruit expensiveFruit = fruits.parallelStream()
+//		.filter(f -> f.getPrice() >= 20000)
+//		//.collect(ExpensiveFruit:: new, ExpensiveFruit:: accumulate, ExpensiveFruit:: combine);		
+//		.collect(()-> new ExpensiveFruit(), (a, b)-> a.accumulate(b), ExpensiveFruit:: combine);
+//		expensiveFruit.getList().forEach(f -> System.out.println(f.getName()));		
+//		
+//		List<Fruit> I7000List = fruits.stream()
+//				.filter(f -> f.getPrice() == 17000)
+//				.collect(Collectors.toList());
+//		I7000List.stream().forEach(f -> System.out.println(f.getName()));
 		
 	}
 }

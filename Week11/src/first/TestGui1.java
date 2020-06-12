@@ -44,7 +44,9 @@ public class TestGui1 extends JFrame {
 //		JButton b = new JButton("버튼");
 //		add(b); // 버튼을 프레임에 부착
 //		
-//		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //상단바에 X를 누르면 종료시킨다
+////		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);  //상단바에 X를 눌러도 아무일이없게한다
+//		
 //		setSize(400,100);
 //		setVisible(true);		
 //	}	
@@ -75,7 +77,7 @@ public class TestGui1 extends JFrame {
 
 
 
-// #2
+// #2   규모가 커지면 이런식으로
 //package first;
 //
 //import javax.swing.JFrame;
@@ -91,11 +93,11 @@ public class TestGui1 extends JFrame {
 //
 //public class TestGui1 {
 //	// AWT, SWING, Java2D, JavaFX
-//	public static void main(String[] args) {
+//	public static void main(String[] ar gs) {
 //		new UrFrame();
 //	}
 //}
-
+//
 
 
 
@@ -103,6 +105,7 @@ public class TestGui1 extends JFrame {
 //package first;
 //
 //import javax.swing.JFrame;
+//
 //
 //public class TestGui1 {
 //	// AWT, SWING, Java2D, JavaFX

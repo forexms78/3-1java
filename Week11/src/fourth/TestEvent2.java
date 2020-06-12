@@ -71,7 +71,7 @@ public class TestEvent2 extends JFrame implements ActionListener{
 //	//JTextField tf1;
 //	TestEvent2(){
 //		setLayout(new FlowLayout());
-//		JTextField tf1 = new JTextField(10);
+//		JTextField tf1 = new JTextField(10);		//10글자가 들어갈수있는 텍스트 필드를 만든다
 //		JTextField tf2 = new JTextField(10);
 //		// tf1 = new JTextField(10);
 //		JLabel lbl = new JLabel("Display");
@@ -90,7 +90,8 @@ public class TestEvent2 extends JFrame implements ActionListener{
 //				}else if(ev.getSource() == b2) {
 //					result = a - b;
 //				}
-//				lbl.setText(String.valueOf(result));				
+//				lbl.setText(String.valueOf(result));	// Integer.parseInt = String.valueOf			
+//
 //			}
 //		};
 //		b1.addActionListener(al);

@@ -9,7 +9,7 @@ public class TestTimeClient {
 	public static void main(String[] args) {
 		System.out.println("멀티캐스트 타임 클라이언트");		
 		try(MulticastSocket ms = new MulticastSocket(9500)){
-			InetAddress group = InetAddress.getByName("224.0.0.0");
+			InetAddress group = InetAddress.getByName("224.0.0.0");	// 공인 아이피랑은 다르다
 			ms.joinGroup(group); // 메세지 받기 전에 그룹에 가입
 			System.out.println("멀티캐스트 그룹 가입완료!");
 			

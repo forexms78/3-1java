@@ -1,36 +1,36 @@
-// #2
-//package third;
-//
-//import java.awt.BorderLayout;
-//import javax.swing.JFrame;
-//import javax.swing.JLabel;
-//import javax.swing.JScrollBar;
-//
-//public class TestEvent1 extends JFrame {
-//	TestEvent1(){
-//		setTitle("Scrollbar Event Handling~");
-//		
-//		JLabel lbl = new JLabel("", JLabel.CENTER);
-//		JScrollBar sb = new JScrollBar(JScrollBar.HORIZONTAL);  //스크롤바의 모양 버티칼로하면 카로로 스크롤하게된다
-//		sb.setValues(50, 1, 0, 100);
-//		sb.addAdjustmentListener(ev -> {
-//			int display = ev.getValue();
-//			lbl.setText("현재 위치 : " + display);
-//		});
-//
-//		
-//		add("North", lbl);
-//		add("South", sb);
-//		
-//		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//		setSize(500,300);
-//		setVisible(true);
-//	}
-//	
-//	public static void main(String[] args) {
-//		new TestEvent1();
-//	}
-//}
+//// #2
+////package third;
+////
+////import java.awt.BorderLayout;
+////import javax.swing.JFrame;
+////import javax.swing.JLabel;
+////import javax.swing.JScrollBar;
+////
+////public class TestEvent1 extends JFrame {
+////	TestEvent1(){
+////		setTitle("Scrollbar Event Handling~");
+////		
+////		JLabel lbl = new JLabel("", JLabel.CENTER);
+////		JScrollBar sb = new JScrollBar(JScrollBar.HORIZONTAL);  //스크롤바의 모양 버티칼로하면 카로로 스크롤하게된다
+////		sb.setValues(50, 1, 0, 100);
+////		sb.addAdjustmentListener(ev -> {
+////			int display = ev.getValue();
+////			lbl.setText("현재 위치 : " + display);
+////		});
+////
+////		
+////		add("North", lbl);
+////		add("South", sb);
+////		
+////		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+////		setSize(500,300);
+////		setVisible(true);
+////	}
+////	
+////	public static void main(String[] args) {
+////		new TestEvent1();
+////	}
+////}
 package third;
 
 import java.awt.BorderLayout;

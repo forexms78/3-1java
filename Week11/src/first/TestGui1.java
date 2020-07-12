@@ -1,34 +1,34 @@
 // #5
-package first;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
-public class TestGui1 extends JFrame {
-	TestGui1(){
-		setTitle("안녕 GUI~");
-		
-		JPanel p = new JPanel();
-		JLabel l = new JLabel("안녕 레이블~");	
-		JButton b = new JButton("버튼");
-		
-		p.add(l); // 패널객체 p에 레이블 부착
-		p.add(b); // 패널객체 p에 버튼 부착
-		
-		add(p); // 패널을 프레임에 부착
-		
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(400,100);
-		//pack();
-		setVisible(true);		
-	}	
-	
-	public static void main(String[] args) {
-		new TestGui1();
-	}
-}
+//package first;
+//
+//import javax.swing.JButton;
+//import javax.swing.JFrame;
+//import javax.swing.JLabel;
+//import javax.swing.JPanel;
+//
+//public class TestGui1 extends JFrame {
+//	TestGui1(){
+//		setTitle("안녕 GUI~");
+//		
+//		JPanel p = new JPanel();
+//		JLabel l = new JLabel("안녕 레이블~");	
+//		JButton b = new JButton("버튼");
+//		
+//		p.add(l); // 패널객체 p에 레이블 부착
+//		p.add(b); // 패널객체 p에 버튼 부착
+//		
+//		add(p); // 패널을 프레임에 부착
+//		
+//		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//		setSize(400,100);
+//		//pack();
+//		setVisible(true);		
+//	}	
+//	
+//	public static void main(String[] args) {
+//		new TestGui1();
+//	}
+//}
 
 
 // #4

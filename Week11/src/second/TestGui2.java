@@ -1,52 +1,9 @@
-package second;
-
-import java.awt.BorderLayout;
-import java.awt.ComponentOrientation;
-import java.awt.FlowLayout;
-import java.awt.GridLayout;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-
-public class TestGui2 extends JFrame {	
-	TestGui2(){
-		setTitle("Grid Layout");
-		setLayout(new GridLayout(0,3));		
-	
-		JButton b1 = new JButton("Button 1");
-		JButton b2 = new JButton("Btn 2");
-		JButton b3 = new JButton("B 3");
-		JButton b4 = new JButton("B4");
-		JButton b5 = new JButton("Button 55555");
-		JButton b6 = new JButton("Button 55555");
-
-		
-		add(b1);
-		add(b2);
-		add(b3);
-		add(b4);
-		add(b5);
-		add(b6);
-		add(new JButton("마지막 버튼"));
-		
-		
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(300, 300);
-		setVisible(true);		
-	}
-
-	public static void main(String[] args) {
-		new TestGui2();
-	}
-}
-
-// #2
 //package second;
-//
+
 //import java.awt.BorderLayout;
 //import java.awt.ComponentOrientation;
 //import java.awt.FlowLayout;
+//import java.awt.GridLayout;
 //
 //import javax.swing.JButton;
 //import javax.swing.JFrame;
@@ -54,26 +11,25 @@ public class TestGui2 extends JFrame {
 //
 //public class TestGui2 extends JFrame {	
 //	TestGui2(){
-//		setTitle("Border Layout");
-//		setLayout(new BorderLayout());		
+//		setTitle("Grid Layout");
+//		setLayout(new GridLayout(0,3));		
 //	
 //		JButton b1 = new JButton("Button 1");
 //		JButton b2 = new JButton("Btn 2");
 //		JButton b3 = new JButton("B 3");
 //		JButton b4 = new JButton("B4");
 //		JButton b5 = new JButton("Button 55555");
+//		JButton b6 = new JButton("Button 55555");
+//
 //		
-////		add(b1, BorderLayout.EAST);
-////		add(b2,BorderLayout.CENTER);
-////		add(b3,BorderLayout.WEST);
-////		add(b4,BorderLayout.NORTH);
-////		add(b5,BorderLayout.CENTER);
+//		add(b1);
+//		add(b2);
+//		add(b3);
+//		add(b4);
+//		add(b5);
+//		add(b6);
+//		add(new JButton("마지막 버튼"));
 //		
-//		add("East", b1);
-//		add("South", b2);
-//		add(b3,BorderLayout.WEST );
-//		add("North", b4);
-//		add(b5, BorderLayout.CENTER);
 //		
 //		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //		setSize(300, 300);
@@ -84,6 +40,50 @@ public class TestGui2 extends JFrame {
 //		new TestGui2();
 //	}
 //}
+
+// #2
+package second;
+
+import java.awt.BorderLayout;
+import java.awt.ComponentOrientation;
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class TestGui2 extends JFrame {	
+	TestGui2(){
+		setTitle("Border Layout");
+		setLayout(new BorderLayout());		
+	
+		JButton b1 = new JButton("Button 1");
+		JButton b2 = new JButton("Btn 2");
+		JButton b3 = new JButton("B 3");
+		JButton b4 = new JButton("B4");
+		JButton b5 = new JButton("Button 55555");
+		
+//		add(b1, BorderLayout.EAST);
+//		add(b2,BorderLayout.CENTER);
+//		add(b3,BorderLayout.WEST);
+//		add(b4,BorderLayout.NORTH);
+//		add(b5,BorderLayout.CENTER);
+		
+		add("East", b1);
+		add("South", b2);
+		add(b3,BorderLayout.WEST );
+		add("North", b4);
+		add(b5, BorderLayout.CENTER);
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(300, 300);
+		setVisible(true);		
+	}
+
+	public static void main(String[] args) {
+		new TestGui2();
+	}
+}
 
 
 
